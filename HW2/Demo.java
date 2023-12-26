@@ -12,10 +12,11 @@ public class Demo {
         list2.add("Amran");
         list2.add(11);
 
-        System.out.println(list.equals(list2));
+        System.out.println(String.format("The two lists are %s",
+                list.equals(list2) ? "equal" : "not equal"));
 
-        // System.out.println(list.getElement(0));
-        // System.out.println(list.size());
-        // System.out.println(list.getTail().getElement());
+        System.out.println("The value of index 0 is: " + list.getElement(0));
+        System.out.println("The size of the list is: " + list.size());
+        System.out.println("The value of the last element is: " + list.getTail().getElement());
     }
 }
